@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "arcix",
+	"version": "${version}",
+	"name": "Arcix",
+	"description": "W.I.P",
+	"authors": [
+		"blushstar"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/blushstar/Arcix-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/arcix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.blushstar.arcix.Arcix"
+		],
+		"fabric-datagen": [
+			"com.blushstar.arcix.ArcixDataGenerator"
+		],
+        "client": [
+          "com.blushstar.arcix.ArcixClient"
+        ]
+	},
+	"mixins": [
+		"arcix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
